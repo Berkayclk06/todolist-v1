@@ -11,6 +11,7 @@ app.set("view engine", "ejs");
 
 //TAKE VARIABLE FROM LIST.EJS (OR WHERE THE POST METHOD IS)
 app.use(bodyParser.urlencoded({extended: true}));
+app.use(express.static("public"));
 
 app.get("/", function(req, res){
     
